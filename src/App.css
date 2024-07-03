@@ -1,0 +1,89 @@
+.app-container {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: auto;
+  color: black;
+}
+
+.projects-list {
+  list-style-type: none;
+  padding-left: 0;
+  color: black;
+}
+
+.project-button {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  padding-left: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.project-button::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg); /* Rotate the arrow downward by default */
+  width: 12px;
+  height: 12px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project-button.active::before {
+  transform: translateY(-50%); /* Reset the rotation to 0 degrees when active */
+}
+
+.wbs-list {
+  list-style-type: none;
+  padding-left: 20px;
+  margin: 10px 0;
+  color: black;
+}
+
+.wbs-button {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  padding-left: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.wbs-button::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg); /* Rotate the arrow downward by default */
+  width: 12px;
+  height: 12px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.wbs-button.active::before {
+  transform: translateY(-50%); /* Reset the rotation to 0 degrees when active */
+}
+
+.task-list {
+  list-style-type: none;
+  padding-left: 20px;
+  color: black;
+}
+
+.task-item {
+  margin: 3px 0;
+  color: black;
+}

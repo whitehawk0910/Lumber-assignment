@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "WBS 1",
+    "projectId": 1
+  },
+  {
+    "id": 2,
+    "name": "WBS 2",
+    "projectId": 2
+  }
+]
